@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soda </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div>LundDev</div>
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>Contact</li>
+                    <li>Info</li>
+                </ul>
+            </nav>
+        </header>
+        <div class="carousel">
+            <div class="list">
+                <div class="active item" style="--bg:#ea3d41">
+                    <div class="content">
+                        strawberry
+                    </div>
+                    <img src="img/fruit_strawberry.png" alt="">
+                </div>
+
+                <div class="item" style="--bg:#2d5643">
+                    <div class="content">
+                        avocado
+                    </div>
+                    <img src="img/fruit_avocado.png" alt="">
+                </div>
+
+                <div class="item hidden" style="--bg:#e7a034">
+                    <div class="content">
+                        orange
+                    </div>
+                    <img src="img/fruit_orange.png" alt="">
+                </div>
+            </div>
+            <div class="leaves"></div>
+            <div class="mockup"></div>
+            <div class="shadow"></div>
+            <div class="arrow">
+                <button id="prev"> < </button>
+                <button id="next"> > </button>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

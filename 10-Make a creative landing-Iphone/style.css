@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+.container{
+    background-color: #1e1e1e;
+    height: 100svh;
+    overflow: hidden;
+    position: relative;
+
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+header .appleLogo img{
+    width:60px;
+    margin-top: 20px;
+}
+header nav ul{
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+header nav ul li a{
+    color: white;
+    transition: 0.3s ease;
+    font-size: 18px;
+}
+header nav ul li:hover,
+header nav ul li a:hover
+{
+    transform: scale(1.1);
+    color:rgb(84, 192, 156);
+}
+main{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+main div h1{
+    font-size: 46px;
+}
+main div p{
+    width: 40%;
+    margin: 25px 0px;
+    line-height: 22px;
+}
+main div a{
+    background-color: white;
+    color: black;
+    padding:10px 12px;
+    border-radius: 20px;
+    transition: 0.3s;
+
+}
+main div a:hover{
+    transform: scale(1.1);
+    background-color:rgb(84, 192, 156) ;
+}
+main img{
+    width: 300px;
+}
+.icons {
+    position: absolute;
+    left: 50%;
+    transform:translateX(-50%);
+    bottom: 10px;
+
+}
+.icons img{
+    width: 80px;
+    transition: 0.3s ease;
+}
+.icons img:hover{
+    transform: scale(1.1);
+}
+@media (max-width:768px) {
+    main div {
+        margin-top: 25px;
+    }
+    main div h1{
+        font-size: 26px;
+    }
+    main div p{
+        width: 100%;
+        margin: 25px 0px;
+        line-height: 22px;
+    }
+    main img{
+        width: 100px;
+    }
+    .icons{
+        bottom:300px;
+    }
+    .icons img{
+        width:30px;
+    }
+    header nav ul{
+        gap: 10px;
+    }
+    header nav ul li a{
+        font-size: 14px;
+    }
+    header .appleLogo img{
+        width:40px;
+    }
+}
